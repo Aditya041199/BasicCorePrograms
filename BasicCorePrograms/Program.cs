@@ -10,7 +10,7 @@ namespace BasicCorePrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.FlipCoin" + "\n" + "2.Leap Year" + "\n" + "3.Power Of Two" + "\n" + "4.Harmonic Number" + "\n" + "5.Prime Factor" + "\n" + "6.Exit");
+                Console.WriteLine("1.FlipCoin" + "\n" + "2.Leap Year" + "\n" + "3.Power Of Two" + "\n" + "4.Harmonic Number" + "\n" + "5.Prime Factor" + "\n" + "6.Quotient And Remainder" + "\n" + "7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,6 +33,10 @@ namespace BasicCorePrograms
                     case 5:
                         PrimeFactor primeFactor = new PrimeFactor();
                         primeFactor.Factor();
+                        break;
+                    case 6:
+                        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                        quotientAndRemainder.QuoRem();
                         break;
                     default:
                         break;
